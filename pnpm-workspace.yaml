@@ -1,0 +1,6 @@
+# olp-monitor/pnpm-workspace.yaml
+
+packages:
+  # all packages in subdirs of apps/ and packages/
+  - 'apps/*'
+  - 'packages/*'

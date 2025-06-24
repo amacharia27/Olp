@@ -1,0 +1,25 @@
+{
+  "name": "olp-monitor-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The root of the OLP Monitor monorepo",
+  "scripts": {
+    "install:all": "pnpm install",
+    "dev": "pnpm --filter \"./apps/*\" --parallel dev",
+    "build": "pnpm --filter \"./packages/*\" build && pnpm --filter \"./apps/*\" build",
+    "lint": "pnpm --parallel lint",
+    "test": "pnpm --parallel test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.9.2",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.5",
+    "bcryptjs": "^2.4.3",
+    "recharts": "^2.15.3"
+  }
+}

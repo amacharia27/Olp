@@ -1,0 +1,17 @@
+{
+    "name": "@olp-monitor/database-models",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "scripts": {
+      "lint": "eslint . --ext .ts"
+    },
+    "dependencies": {
+      "@olp-monitor/shared-types": "workspace:*",
+      "mongoose": "^7.6.3"
+    },
+    "devDependencies": {
+      "typescript": "^5.2.2"
+    }
+  }
